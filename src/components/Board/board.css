@@ -1,0 +1,12 @@
+.board-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #f4f5f9;
+    padding-top:20px;
+}
+.board-section{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    width: 95%;
+}

@@ -1,14 +1,17 @@
 .status-column{
     display: flex;
     flex-direction: column;  
-    width: 20%;
-    padding: 1em 2em;
+    margin-right: 20px;
     margin-bottom: 1rem;
+    flex-grow: 1;
+    flex-basis: 0;
 }
 .status-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+
 }
 .data-container{
     margin-top : 2vh;
@@ -16,23 +19,24 @@
     flex-direction: column;
     gap: 3vh;
 }
-.status-header{
-    padding: 1em 2em;
-    display: flex;
-    align-items: center;
-}
 .status-header-row, .user-header-row{
     display: flex;
     align-items: center;
+}
+.status-header-row{
+    display: flex;
+    justify-content: space-between;
 }
 .data-unit{
     padding: 1em 1em;
     background-color: #fff;
     border-radius: 0.5rem;
-    min-height: 15vh;
+    min-height: 9vh;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 .data-unit-upper{
     display: flex;

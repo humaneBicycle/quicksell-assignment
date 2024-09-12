@@ -1,19 +1,19 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import MainSection from './Components/MainSection/mainSection';
-import TopBar from './Components/topBar';
-import axios from 'axios';
+import Board from './components/Board/board.js';
+import NavBar from './components/Navbar/NavBar.js';
 
-function App() {
+export default function App() {
+  const [data, setData] = useState({})
   const [viewOptions, setViewOptions] = useState({
     "grouped_by" : "status",
     "sorted_by" : "priority"
   })
-  const [data, setData] = useState({})
   const fetchData = async()=>{
       try {
-        let response = await axios.get("https://api.quicksell.co/v1/internal/frontend-assignment")
-        setData(response.data)
+        let response = await fetch("https://api.quicksell.co/v1/internal/frontend-assignment")
+        let data = response = await response.json()
+        setData(data)
       } catch (error) {
         console.log("Error Occured : ", error)
         alert("Something went wrong")
@@ -22,14 +22,11 @@ function App() {
   useEffect(()=>{
     fetchData()
   },[])
-  console.log({data})
-  console.log({viewOptions})
   return (
     <div className="App">
-      <TopBar viewOptions={viewOptions} setViewOptions={setViewOptions}/>
-      <MainSection data={data} viewOptions={viewOptions}/>
+      <NavBar viewOptions={viewOptions} setViewOptions={setViewOptions}/>
+      <Board data={data} viewOptions={viewOptions}/>
     </div>
   )
 }
 
-export default App;

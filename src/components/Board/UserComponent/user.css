@@ -1,0 +1,107 @@
+.user-column{
+    display: flex;
+    flex-direction: column;  
+    margin-right: 20px;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.user-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile_dp {
+    display: inline-block;
+    width: 20px;           
+    height: 20px;         
+    border-radius: 50%;    
+    background-color: #3b72bf; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    font-size: 16px;       
+    font-weight: 600;      
+    color: #cacaca;            
+    border: 2px solid #3b72bf;
+    text-align: center;
+}
+.user-column {
+  /* Your custom styles for user-column */
+}
+
+.user-header {
+  /* Styles for the header of the user */
+}
+
+.user-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile_dp {
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* Other styles */
+}
+
+.user-name {
+  /* Add styling for the user's name */
+}
+
+.ticket-count {
+  color: #a9a9a9;
+}
+
+.data-container {
+  /* Add styles for the container of the data */
+}
+
+.data-unit {
+  min-height: 10vh;
+  gap: 1.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-unit-upper {
+  display: flex;
+}
+
+.data-unit-upper-left {
+  width: 100%;
+}
+
+.ticket-id {
+  color: #a9a9a9;
+  margin-bottom: 0.2rem;
+}
+
+.ticket-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.status-icon {
+  /* Style the status icons */
+}
+
+.data-unit-lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-menu-wrapper {
+  display: flex;
+}
+
+.tag-container {
+  /* Style for the container of the tags */
+}
+
+/* Icons */
+.icon-add, .icon-menu {
+  width: 20px;
+  height: 20px;
+}

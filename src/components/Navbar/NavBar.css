@@ -1,17 +1,9 @@
-.topbar{
-    display: flex;
-    background-color: aqua;
-    min-height: 8vh;
-    align-items: center;
-    background-color: #ffffff;
-}
 
 .display-options-container {
     display: flex;
     justify-content: space-between;
     gap: 0.5em;
     align-items: center;
-    margin-left: 5vw;
     height: 40%;
     background-color: #fff;
     border: 0.2em;
@@ -39,6 +31,17 @@
     flex-direction: column;
     padding: 1em 2em;
     gap: 1em;
+}
+.navbar-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    min-height: 8vh;
+    align-items: center;
+    background-color: #ffffff;
+    width: 95%;
 }
 
 .dropdown-option{
