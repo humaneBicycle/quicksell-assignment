@@ -1,0 +1,12 @@
+.user-column{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    padding: 1em 2em;
+    margin-bottom: 1rem;
+}
+.user-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+.main-section{
+    background-color: #f4f5f9;
+    flex-grow: 1;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    overflow-x: auto;
+    max-height: 100vh;
+}
